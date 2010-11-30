@@ -184,12 +184,20 @@ projects[webform][version] = "3.0-beta6"
 projects[wysiwyg][subdir] = "contrib"
 projects[wysiwyg][version] = "2.1"
 
+; Mobile tools and dependencies
+
+projects[mobile_tools][subdir] = "contrib"
+projects[mobile_tools][version] = "6.x-1.14"
+
+projects[browscap][subdir] = "contrib"
+projects[browscap][version] = "6.x-1.1"
+
 ; Themes
 projects[tao][location] = "http://code.developmentseed.org/fserver"
-projects[tao][version] = "2.2"
+projects[tao][version] = "3.1"
 
 projects[rubik][location] = "http://code.developmentseed.org/fserver"
-projects[rubik][version] = "2.0-beta4"
+projects[rubik][version] = "3.0-beta2"
 
 projects[mothership][version] = "1.1" 
 
@@ -226,8 +234,8 @@ projects[kolding][download][url] = "git://github.com/kbib/kolding.git"
 projects[backup_migrate][subdir] = "contrib"
 projects[backup_migrate][version] = "2.2"
 
-projects[memcache][subdir] = "contrib"
-projects[memcache][version] = "1.5"
+;projects[memcache][subdir] = "contrib"
+;projects[memcache][version] = "1.5"
 
 ; Libraries
 libraries[ting-client][download][type] = "git"
