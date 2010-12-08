@@ -184,14 +184,6 @@ projects[webform][version] = "3.0-beta6"
 projects[wysiwyg][subdir] = "contrib"
 projects[wysiwyg][version] = "2.1"
 
-; Mobile tools and dependencies
-
-projects[mobile_tools][subdir] = "contrib"
-projects[mobile_tools][version] = "6.x-1.14"
-
-projects[browscap][subdir] = "contrib"
-projects[browscap][version] = "6.x-1.1"
-
 ; Themes
 projects[tao][location] = "http://code.developmentseed.org/fserver"
 projects[tao][version] = "3.1"
@@ -236,6 +228,31 @@ projects[backup_migrate][version] = "2.2"
 
 ;projects[memcache][subdir] = "contrib"
 ;projects[memcache][version] = "1.5"
+
+; Mobile modules and themes
+
+projects[alternator][type] = "theme"
+projects[alternator][download][type] = "git"
+projects[alternator][download][url] = "https://github.com/kbib/alternator.git"
+
+projects[kolding_mobile][type] = "theme"
+projects[kolding_mobile][download][type] = "git"
+projects[kolding_mobile][download][url] = "https://github.com/kbib/kolding-mobile.git"
+
+projects[ding_mobile][type] = "module"
+projects[ding_mobile][download][type] = "git"
+projects[ding_mobile][download][url] = "https://github.com/kbib/ding-mobile.git"
+
+; Mobile tools and dependencies
+
+projects[mobile_tools][subdir] = "contrib"
+projects[mobile_tools][version] = "1.14"
+
+projects[browscap][subdir] = "contrib"
+projects[browscap][version] = "1.1"
+
+projects[menu_block][subdir] = "contrib"
+projects[menu_block][version] = "2.3"
 
 ; Libraries
 libraries[ting-client][download][type] = "git"
