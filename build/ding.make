@@ -216,9 +216,9 @@ projects[openruth][type] = "module"
 projects[openruth][download][type] = "git"
 projects[openruth][download][url] = "https://github.com/dingproject/openruth.git"
 
-projects[ding][type] = "module" 
-projects[ding][download][type] = "git" 
-projects[ding][download][url] = "git://github.com/dingproject/ding.git"
+projects[ding][type] = "module"
+projects[ding][download][type] = "git"
+projects[ding][download][url] = "https://github.com/kbib/ding.git"
 
 projects[ding_campaign][type] = "module"
 projects[ding_campaign][download][type] = "git"
