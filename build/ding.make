@@ -210,7 +210,7 @@ projects[dynamo][download][url] = "https://github.com/dingproject/dynamo.git"
 
 projects[alma][type] = "module"
 projects[alma][download][type] = "git"
-projects[alma][download][url] = "https://github.com/dingproject/alma.git"
+projects[alma][download][url] = "https://github.com/kbib/alma.git"
 
 projects[openruth][type] = "module"
 projects[openruth][download][type] = "git"
