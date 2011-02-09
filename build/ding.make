@@ -240,6 +240,10 @@ projects[backup_migrate][version] = "2.2"
 ;projects[memcache][subdir] = "contrib"
 ;projects[memcache][version] = "1.5"
 
+projects[securepages][subdir] = "contrib"
+projects[securepages][version] = "1.8"
+projects[securepages][patch][] = "http://drupal.org/files/issues/globalbase_url_6.x-1.8.patch"
+
 ; Mobile modules and themes
 
 projects[alternator][type] = "theme"
