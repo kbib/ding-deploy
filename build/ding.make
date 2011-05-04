@@ -273,6 +273,7 @@ projects[menu_block][version] = "2.3"
 libraries[ting-client][download][type] = "git"
 libraries[ting-client][download][url] = "https://github.com/dingproject/ting-client.git"
 libraries[ting-client][destination] = "modules/ting/lib"
+libraries[ting-client][download][revision] = "v1.0.0"
 
 libraries[jquery_ui][download][type] = "get"
 libraries[jquery_ui][download][url] = "http://jquery-ui.googlecode.com/files/jquery.ui-1.6.zip"
