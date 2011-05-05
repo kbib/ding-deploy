@@ -1,3 +1,5 @@
+# This is the ding.vcl varnish configuration file created for Varnish 2.0.x versions
+
 backend default {
   .host = "127.0.0.1";
   .port = "8042";
@@ -8,7 +10,7 @@ backend default {
     .threshold = 2;
     .request =
       "GET /index.php HTTP/1.1"
-      "Host: bibliotek.kk.dk"
+      "Host: kolding.ding.dbc.dk"
       "Connection: close"
       "Accept-Encoding: text/html";
   }
@@ -58,30 +60,31 @@ sub vcl_recv {
   if (req.url ~ "\.(css|html|js)") {
     unset req.http.cookie;
     set req.url = regsub(req.url, "\?.*$", "");
-    lookup;
+    return(lookup);
   }
 
   // images
   if (req.url ~ "\.(gif|jpg|jpeg|bmp|png|tiff|tif|ico|img|tga|wmf)$") {
     unset req.http.cookie;
-    lookup;
+    return(lookup);
   }
 
   // ajax-callback (clears the timestamp)
-  if (req.url ~ "/ting/autocomplete") {
+  if (req.url ~ "(/|q=)ting/autocomplete") {
     unset req.http.cookie;
     set req.url = regsub(req.url, "\&timestamp=[0-9]+", "");
-    lookup;
+    return(lookup);
   }
 
   // always cache these urls
   if (req.url ~ "/ting_search_carousel/results" || 
-      req.url ~ "/ting/search/" ||
-      req.url ~ "/ting/availability/" ||
-      req.url ~ "/office_hours/"
+      req.url ~ "/office_hours/" ||
+      req.url ~ "(/|q=)ting/search/js" ||
+      req.url ~ "(/|q=)/ting/search/content/js" ||
+      req.url ~ "(/|q=)/ting/availability/"
       ) {
     unset req.http.cookie;
-    lookup;
+    return(lookup);
   }
 
   // Remove a ";" prefix, if present.
@@ -153,6 +156,39 @@ sub vcl_fetch {
   set obj.http.X-Cacheable = "YES";
 
   return(deliver);
+}
+
+sub vcl_deliver {
+  # Remove the magic marker
+  if (resp.http.magicmarker) {
+    unset resp.http.magicmarker;
+
+    # By definition we have a fresh object
+    set resp.http.age = "0";
+  }
+
+  # Add cache hit data
+  if (obj.hits > 0) {
+    # If hit add hit count
+    set resp.http.X-Cache = "HIT";
+    set resp.http.X-Cache-Hits = obj.hits;
+  } else {
+    set resp.http.X-Cache = "MISS";
+  }
+}
+
+sub vcl_error {
+  if (obj.status == 503 && req.restarts < 5) {
+    set obj.http.X-Restarts = req.restarts;
+    restart;
+  }
+}
+
+sub vcl_hit {
+  # Allow users force refresh
+  if (!obj.cacheable) {
+    return(pass);
+  }
 }
 
 sub vcl_deliver {
