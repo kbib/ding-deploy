@@ -1,6 +1,11 @@
-; $Id: ding.make,v 1.1 2010/05/14 08:28:32 mikl Exp $
+api = 2
 core = 6.x
-projects[] = drupal
+
+; Install pressflow v6.x
+
+projects[pressflow][type] = "core"
+projects[pressflow][download][type] = "get"
+projects[pressflow][download][url] = "http://files.pressflow.org/pressflow-6-current.tar.gz"
 
 ; Contrib projects
 
@@ -50,7 +55,7 @@ projects[date][subdir] = "contrib"
 projects[date][version] = "2.6"
 
 projects[dibs][subdir] = "contrib"
-projects[dibs][version] = "1.x-dev"
+projects[dibs][version] = "1.0"
 
 projects[email][subdir] = "contrib"
 projects[email][version] = "1.2"
@@ -126,16 +131,16 @@ projects[menu_block][subdir] = "contrib"
 projects[menu_block][version] = "2.3"
 
 projects[oembed][subdir] = "contrib"
-projects[oembed][version] = "0.7"
+projects[oembed][version] = "0.8"
 
 projects[office_hours][type] = "module"
 projects[office_hours][subdir] = "contrib"
 projects[office_hours][download][type] = "git"
-projects[office_hours][download][url] = "https://github.com/mikl/drupal-office_hours.git"
-projects[office_hours][download][revision] = "9a33296734d534a20a66731de2008cf17f4f71e5"
+projects[office_hours][download][url] = "https://github.com/dingproject/drupal-office_hours.git"
+projects[office_hours][download][tag] = "DRUPAL-6--2-0-UNOFFICIAL7"
 
 projects[panels][subdir] = "contrib"
-projects[panels][version] = "3.8"
+projects[panels][version] = "3.9"
 projects[panels][patch][] = "https://github.com/downloads/dingproject/ding-deploy/panels_legacy_mode_disabling.patch"
 
 projects[path_redirect][subdir] = "contrib"
@@ -167,7 +172,7 @@ projects[suggestedterms][subdir] = "contrib"
 projects[suggestedterms][version] = "1.3"
 
 projects[tagadelic][subdir] = "contrib"
-projects[tagadelic][version] = "1.2"
+projects[tagadelic][version] = "1.3"
 
 projects[term_node_count][subdir] = "contrib"
 projects[term_node_count][version] = "1.3"
@@ -182,13 +187,13 @@ projects[vertical_tabs][subdir] = "contrib"
 projects[vertical_tabs][version] = "1.0-rc1"
 
 projects[views][subdir] = "contrib"
-projects[views][version] = "2.11"
+projects[views][version] = "2.12"
 
 projects[views_bulk_operations][subdir] = "contrib"
 projects[views_bulk_operations][version] = "1.10"
 
 projects[webform][subdir] = "contrib"
-projects[webform][version] = "3.2"
+projects[webform][version] = "3.5"
 
 projects[wysiwyg][subdir] = "contrib"
 projects[wysiwyg][version] = "2.1"
@@ -205,16 +210,19 @@ projects[mothership][version] = "1.1"
 projects[dynamo][type] = "theme"
 projects[dynamo][download][type] = "git"
 projects[dynamo][download][url] = "https://github.com/dingproject/dynamo.git"
+projects[dynamo][download][revision] = "v2.1.6"
 
 ; Ding modules
 
 projects[alma][type] = "module"
 projects[alma][download][type] = "git"
+
 projects[alma][download][url] = "https://github.com/kbib/alma.git"
 
 projects[openruth][type] = "module"
 projects[openruth][download][type] = "git"
 projects[openruth][download][url] = "https://github.com/dingproject/openruth.git"
+projects[openruth][download][revision] = "v1.0.7"
 
 projects[ding][type] = "module"
 projects[ding][download][type] = "git"
@@ -223,10 +231,22 @@ projects[ding][download][url] = "https://github.com/kbib/ding.git"
 projects[ding_campaign][type] = "module"
 projects[ding_campaign][download][type] = "git"
 projects[ding_campaign][download][url] = "https://github.com/dingproject/ding-campaign.git"
+projects[ding_campaign][download][revision] = "v1.3.1"
 
 projects[ting][type] = "module"
 projects[ting][download][type] = "git"
 projects[ting][download][url] = "https://github.com/dingproject/ting.git"
+projects[ting][download][revision] = "v1.5.6"
+
+projects[trampoline][type] = "module"
+projects[trampoline][download][type] = "git"
+projects[trampoline][download][url] = "https://github.com/dingproject/trampoline.git"
+projects[trampoline][download][revision] = "v1.2"
+
+projects[webtrends][type] = "module"
+projects[webtrends][download][type] = "git"
+projects[webtrends][download][url] = "https://github.com/dingproject/webtrends.git"
+projects[webtrends][download][revision] = "v1.1.0"
 
 ; Kolding-specific modules
 
@@ -272,6 +292,7 @@ projects[menu_block][version] = "2.3"
 ; Libraries
 libraries[ting-client][download][type] = "git"
 libraries[ting-client][download][url] = "https://github.com/dingproject/ting-client.git"
+libraries[ting-client][download][revision] = "v1.0.0"
 libraries[ting-client][destination] = "modules/ting/lib"
 
 libraries[jquery_ui][download][type] = "get"
