@@ -131,10 +131,7 @@ projects[office_hours][type] = "module"
 projects[office_hours][subdir] = "contrib"
 projects[office_hours][download][type] = "git"
 projects[office_hours][download][url] = "https://github.com/dingproject/drupal-office_hours.git"
-projects[office_hours][download][tag] = "6.x-2.0-unofficial8"
-
-projects[openlayers][subdir] = contrib
-projects[openlayers][version] = 2.0-alpha10
+projects[office_hours][download][tag] = "DRUPAL-6--2-0-UNOFFICIAL7"
 
 projects[panels][subdir] = "contrib"
 projects[panels][version] = "3.9"
@@ -207,14 +204,13 @@ projects[mothership][version] = "1.1"
 projects[dynamo][type] = "theme"
 projects[dynamo][download][type] = "git"
 projects[dynamo][download][url] = "https://github.com/dingproject/dynamo.git"
-projects[dynamo][download][revision] = "v2.2.0beta1"
+projects[dynamo][download][revision] = "v2.1.6"
 
 ; Ding modules
 
 projects[alma][type] = "module"
 projects[alma][download][type] = "git"
 projects[alma][download][url] = "https://github.com/kbib/alma.git"
-projects[alma][download][revision] = "v1.6.0beta1"
 
 projects[openruth][type] = "module"
 projects[openruth][download][type] = "git"
@@ -233,7 +229,7 @@ projects[ding_campaign][download][revision] = "v1.3.2"
 projects[ting][type] = "module"
 projects[ting][download][type] = "git"
 projects[ting][download][url] = "https://github.com/dingproject/ting.git"
-projects[ting][download][revision] = "v1.6.0beta1"
+projects[ting][download][revision] = "v1.5.6"
 
 projects[trampoline][type] = "module"
 projects[trampoline][download][type] = "git"
@@ -243,7 +239,7 @@ projects[trampoline][download][revision] = "v1.2.1"
 projects[webtrends][type] = "module"
 projects[webtrends][download][type] = "git"
 projects[webtrends][download][url] = "https://github.com/dingproject/webtrends.git"
-projects[webtrends][download][revision] = "2ec2e7df60f11bf8e84d8c759cee97728d5e00c7"
+projects[webtrends][download][revision] = "v1.1.0"
 
 ; Kolding-specific modules
 
@@ -287,10 +283,10 @@ projects[menu_block][subdir] = "contrib"
 projects[menu_block][version] = "2.3"
 
 ; Libraries
-libraries[ting-client][destination] = "modules/ting/lib"
 libraries[ting-client][download][type] = "git"
 libraries[ting-client][download][url] = "https://github.com/dingproject/ting-client.git"
-libraries[ting-client][download][revision] = "v1.1.0beta1"
+libraries[ting-client][download][revision] = "v1.0.0"
+libraries[ting-client][destination] = "modules/ting/lib"
 
 libraries[jquery_ui][download][type] = "get"
 libraries[jquery_ui][download][url] = "http://jquery-ui.googlecode.com/files/jquery.ui-1.6.zip"
