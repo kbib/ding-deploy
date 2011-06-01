@@ -79,6 +79,9 @@ projects[flexifield][patch][] = "http://drupal.org/files/issues/flexifield-39048
 projects[globalredirect][subdir] = "contrib"
 projects[globalredirect][version] = "1.2"
 
+projects[gmap][subdir] = "contrib"
+projects[gmap][version] = "1.1"
+
 projects[google_analytics][subdir] = "contrib"
 projects[google_analytics][version] = "3.3"
 
@@ -105,6 +108,9 @@ projects[jquery_ui][version] = "1.4"
 
 projects[jquery_update][subdir] = "contrib"
 projects[jquery_update][version] = "1.1"
+
+projects[keys][subdir] = "contrib"
+projects[keys][version] = "2.0"
 
 projects[link][subdir] = "contrib"
 projects[link][version] = "2.9"
