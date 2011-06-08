@@ -247,6 +247,10 @@ projects[kolding][type] = "theme"
 projects[kolding][download][type] = "git"
 projects[kolding][download][url] = "https://github.com/kbib/kolding.git"
 
+projects[kolding_modules][type] = "theme"
+projects[kolding_modules][download][type] = "git"
+projects[kolding_modules][download][url] = "https://github.com/kbib/kolding-modules.git"
+
 projects[backup_migrate][subdir] = "contrib"
 projects[backup_migrate][version] = "2.2"
 
