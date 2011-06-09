@@ -247,7 +247,7 @@ projects[kolding][type] = "theme"
 projects[kolding][download][type] = "git"
 projects[kolding][download][url] = "https://github.com/kbib/kolding.git"
 
-projects[kolding_modules][type] = "theme"
+projects[kolding_modules][type] = "module"
 projects[kolding_modules][download][type] = "git"
 projects[kolding_modules][download][url] = "https://github.com/kbib/kolding-modules.git"
 
@@ -267,7 +267,7 @@ projects[alternator][type] = "theme"
 projects[alternator][download][type] = "git"
 projects[alternator][download][url] = "https://github.com/kbib/alternator.git"
 
-projects[kolding_mobile][type] = "module"
+projects[kolding_mobile][type] = "theme"
 projects[kolding_mobile][download][type] = "git"
 projects[kolding_mobile][download][url] = "https://github.com/kbib/kolding-mobile.git"
 
