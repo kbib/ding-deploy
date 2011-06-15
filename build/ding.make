@@ -231,8 +231,7 @@ projects[ding][download][url] = "https://github.com/kbib/ding.git"
 
 projects[ding_campaign][type] = "module"
 projects[ding_campaign][download][type] = "git"
-projects[ding_campaign][download][url] = "https://github.com/dingproject/ding-campaign.git"
-projects[ding_campaign][download][revision] = "v1.3.2"
+projects[ding_campaign][download][url] = "https://github.com/kbib/ding-campaign.git"
 
 projects[ting][type] = "module"
 projects[ting][download][type] = "git"
