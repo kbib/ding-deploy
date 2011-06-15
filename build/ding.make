@@ -142,6 +142,8 @@ projects[office_hours][download][tag] = "DRUPAL-6--2-0-UNOFFICIAL7"
 projects[panels][subdir] = "contrib"
 projects[panels][version] = "3.9"
 projects[panels][patch][] = "https://github.com/downloads/dingproject/ding-deploy/panels_legacy_mode_disabling.patch"
+; Prevent fatal error for HTTP redirect panels - http://drupal.org/node/967590
+projects[panels][patch][] = "http://drupal.org/files/issues/967590-not-panels-at-all.patch"
 
 projects[path_redirect][subdir] = "contrib"
 projects[path_redirect][version] = "1.0-rc2"
@@ -266,6 +268,20 @@ projects[backup_migrate][version] = "2.2"
 projects[securepages][subdir] = "contrib"
 projects[securepages][version] = "1.8"
 projects[securepages][patch][] = "http://drupal.org/files/issues/globalbase_url_6.x-1.8.patch"
+
+projects[ding_wiki][type] = "module"
+projects[ding_mobile][download][type] = "git"
+projects[ding_mobile][download][url] = "https://github.com/kbib/ding-wiki.git"
+
+projects[diff][subdir] = "contrib"
+projects[diff][version] = "2.1"
+
+projects[node_access][subdir] = "contrib"
+projects[node_access][version] = "1.8"
+
+projects[views_groupby][subdir] = "contrib"
+projects[views_groupby][version] = "1.0-rc2"
+
 
 ; Mobile modules and themes
 
