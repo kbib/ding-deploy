@@ -50,6 +50,8 @@ projects[ctm][version] = "1.0"
 
 projects[ctools][subdir] = "contrib"
 projects[ctools][version] = "1.8"
+; Patch fixes whether tabs pane should render primary and/or secondary tabs. Required by ding_wiki.
+projects[ctools][patch][] = "http://drupal.org/files/issues/ctools_tab_display.patch"
 
 projects[date][subdir] = "contrib"
 projects[date][version] = "2.7"
