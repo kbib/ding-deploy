@@ -47,6 +47,8 @@ projects[content_profile][version] = "1.0"
 
 projects[ctm][subdir] = "contrib"
 projects[ctm][version] = "1.0"
+; Patch allows flexible selection of menus for content types. Required by ding_wiki.
+projects[ctm][patch][] = "http://drupal.org/files/issues/ctm-flexible-menu-selection-1203554.patch"
 
 projects[ctools][subdir] = "contrib"
 projects[ctools][version] = "1.8"
