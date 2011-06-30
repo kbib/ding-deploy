@@ -55,6 +55,8 @@ projects[ctm][patch][] = "http://drupal.org/files/issues/ctm-flexible-menu-selec
 
 projects[ctools][subdir] = "contrib"
 projects[ctools][version] = "1.8"
+; Prevent fatal error for HTTP redirect panels - http://drupal.org/node/967590. Required by ding_wiki.
+projects[ctools][patch][] = "http://drupal.org/files/issues/967590-not-panels-at-all.patch"
 ; Patch fixes whether tabs pane should render primary and/or secondary tabs. Required by ding_wiki.
 projects[ctools][patch][] = "http://drupal.org/files/issues/ctools_tab_display.patch"
 
@@ -159,8 +161,6 @@ projects[office_hours][download][tag] = "DRUPAL-6--2-0-UNOFFICIAL7"
 projects[panels][subdir] = "contrib"
 projects[panels][version] = "3.9"
 projects[panels][patch][] = "https://github.com/downloads/dingproject/ding-deploy/panels_legacy_mode_disabling.patch"
-; Prevent fatal error for HTTP redirect panels - http://drupal.org/node/967590
-projects[panels][patch][] = "http://drupal.org/files/issues/967590-not-panels-at-all.patch"
 
 projects[path_redirect][subdir] = "contrib"
 projects[path_redirect][version] = "1.0-rc2"
