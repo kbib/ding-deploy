@@ -45,9 +45,12 @@ projects[comment_notify][version] = "1.5"
 projects[content_profile][subdir] = "contrib"
 projects[content_profile][version] = "1.0"
 
+projects[ctm][type] = "module"
 projects[ctm][subdir] = "contrib"
-projects[ctm][version] = "1.0"
-; Patch allows flexible selection of menus for content types. Required by ding_wiki.
+projects[ctm][download][type] = "git"
+projects[ctm][download][url] = "http://git.drupal.org/project/ctm.git"
+projects[ctm][download][revision] = "eda95dfe25019fd14ea5b7c488344a0d2401ad85"
+; Patch allows flexible selection of menus for content types. Required by ding_wiki. http://drupal.org/node/1203554
 projects[ctm][patch][] = "http://drupal.org/files/issues/ctm-flexible-menu-selection-1203554.patch"
 
 projects[ctools][subdir] = "contrib"
@@ -131,8 +134,18 @@ projects[masquerade][version] = "1.4"
 projects[menu_breadcrumb][subdir] = "contrib"
 projects[menu_breadcrumb][version] = "1.3"
 
+projects[menu_block][type] = "module"
 projects[menu_block][subdir] = "contrib"
-projects[menu_block][version] = "2.4"
+projects[menu_block][download][type] = "git"
+projects[menu_block][download][url] = "http://git.drupal.org/project/menu_block.git"
+projects[menu_block][download][revision] = "6e8c37d96b44a2a0fef74ccf3cef0512832bb4de"
+; Patches required by ding_wiki.
+; http://drupal.org/node/1203646
+projects[menu_block][patch][] = "http://drupal.org/files/issues/menu-block-illegal-choice-in-parent.patch"
+; http://drupal.org/node/1203654
+projects[menu_block][patch][] = "http://drupal.org/files/issues/menu-block-all-available-1203654-2.patch"
+; http://drupal.org/node/1203648
+projects[menu_block][patch][] = "http://drupal.org/files/issues/menu-block-node-context.patch"
 
 projects[oembed][subdir] = "contrib"
 projects[oembed][version] = "0.8"
