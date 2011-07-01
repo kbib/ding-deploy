@@ -298,6 +298,10 @@ projects[node_access][version] = "1.8"
 projects[views_groupby][subdir] = "contrib"
 projects[views_groupby][version] = "1.0-rc2"
 
+projects[view_revisions_by_content_type][subdir] = "contrib"
+projects[view_revisions_by_content_type][version] = "1.1"
+; Patch to use general view revisions permission as override for specific content types: http://drupal.org/node/1206238
+projects[view_revisions_by_content_type][patch][] "http://drupal.org/files/issues/view-revisions-by-content-type-override.patch"
 
 ; Mobile modules and themes
 
