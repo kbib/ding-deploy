@@ -253,7 +253,7 @@ projects[ding_campaign][download][url] = "https://github.com/kbib/ding-campaign.
 projects[ting][type] = "module"
 projects[ting][download][type] = "git"
 projects[ting][download][url] = "https://github.com/dingproject/ting.git"
-projects[ting][download][revision] = "v1.5.6"
+projects[ting][download][revision] = "edec06cf9fe5a687dba9f26bfd792f30874653ba"
 
 projects[trampoline][type] = "module"
 projects[trampoline][download][type] = "git"
