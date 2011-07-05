@@ -288,7 +288,7 @@ projects[securepages][version] = "1.8"
 projects[securepages][patch][] = "http://drupal.org/files/issues/globalbase_url_6.x-1.8.patch"
 
 projects[addthis][subdir] = "contrib"
-projects[addthis][version] = "6.x-3.0-beta1"
+projects[addthis][version] = "3.0-beta1"
 
 projects[ding_wiki][type] = "module"
 projects[ding_wiki][download][type] = "git"
