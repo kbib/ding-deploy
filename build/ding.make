@@ -147,7 +147,9 @@ projects[menu_block][patch][] = "http://drupal.org/files/issues/menu-block-illeg
 ; http://drupal.org/node/1203654
 projects[menu_block][patch][] = "http://drupal.org/files/issues/menu-block-all-available-1203654-2.patch"
 ; http://drupal.org/node/1203648
-projects[menu_block][patch][] = "http://drupal.org/files/issues/menu-block-node-context.patch"
+projects[menu_block][patch][] = "http://drupal.org/files/issues/menu-block-node-context-1203648-1.patch"
+; http://drupal.org/node/1209520
+projects[menu_block][patch][] = "http://drupal.org/files/issues/menu-block-parent-mlid.patch"
 
 projects[oembed][subdir] = "contrib"
 projects[oembed][version] = "0.8"
