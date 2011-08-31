@@ -230,8 +230,8 @@ projects[mothership][version] = "1.1"
 
 projects[dynamo][type] = "theme"
 projects[dynamo][download][type] = "git"
-projects[dynamo][download][url] = "https://github.com/dingproject/dynamo.git"
-projects[dynamo][download][revision] = "v2.1.6"
+projects[dynamo][download][url] = "https://github.com/kbib/dynamo.git"
+projects[dynamo][download][branch] = "v2.1.x"
 
 ; Ding modules
 
