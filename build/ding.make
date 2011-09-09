@@ -260,12 +260,12 @@ projects[ting][download][branch] = "v1.5.x"
 projects[trampoline][type] = "module"
 projects[trampoline][download][type] = "git"
 projects[trampoline][download][url] = "https://github.com/dingproject/trampoline.git"
-projects[trampoline][download][revision] = "v1.2.1"
+projects[trampoline][download][revision] = "v1.2.3"
 
 projects[webtrends][type] = "module"
 projects[webtrends][download][type] = "git"
 projects[webtrends][download][url] = "https://github.com/dingproject/webtrends.git"
-projects[webtrends][download][revision] = "v1.1.0"
+projects[webtrends][download][revision] = "v1.1.2"
 
 ; Kolding-specific modules
 
