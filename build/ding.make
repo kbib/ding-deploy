@@ -284,8 +284,7 @@ projects[backup_migrate][version] = "2.2"
 ;projects[memcache][version] = "1.5"
 
 projects[securepages][subdir] = "contrib"
-projects[securepages][version] = "1.8"
-projects[securepages][patch][] = "http://drupal.org/files/issues/globalbase_url_6.x-1.8.patch"
+projects[securepages][version] = "1.9"
 
 projects[addthis][subdir] = "contrib"
 projects[addthis][version] = "3.0-beta1"
