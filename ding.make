@@ -30,6 +30,9 @@ projects[ahah_response][version] = "1.2"
 projects[auto_nodetitle][subdir] = "contrib"
 projects[auto_nodetitle][version] = "1.2"
 
+projects[autoload][subdir] = contrib
+projects[autoload][version] = 2.1
+
 projects[better_formats][subdir] = "contrib"
 projects[better_formats][version] = "1.2"
 
@@ -64,22 +67,30 @@ projects[date][subdir] = "contrib"
 projects[date][version] = "2.7"
 
 projects[dibs][subdir] = "contrib"
-projects[dibs][version] = "1.0"
+projects[dibs][type] = "module"
+projects[dibs][download][type] = "git"
+projects[dibs][download][url] = http://git.drupal.org/project/dibs.git
+projects[dibs][download][revision] = 6.x-1.x
+
+projects[diff][subdir] = "contrib"
+projects[diff][version] = "2.1"
 
 projects[email][subdir] = "contrib"
 projects[email][version] = "1.2"
 
-projects[environment_indicator][subdir] = "contrib"
-projects[environment_indicator][version] = "1.0"
+projects[environment_indicator][subdir] = contrib
+projects[environment_indicator][version] = 1.1
 
 projects[features][subdir] = "contrib"
 projects[features][version] = "1.0"
+; Patch to fix reverting menu links http://drupal.org/node/860974
+projects[features][patch][] = "http://drupal.org/files/issues/features.860974.patch"
 
-projects[filefield][subdir] = "contrib"
-projects[filefield][version] = "3.9"
+projects[filefield][subdir] = contrib
+projects[filefield][version] = 3.10
 
-projects[insert][subdir] = "contrib"
-projects[insert][version] = "1.0"
+projects[insert][subdir] = contrib
+projects[insert][version] = 1.1
 
 projects[flexifield][subdir] = "contrib"
 projects[flexifield][version] = "1.0-alpha5"
@@ -100,17 +111,17 @@ projects[htmLawed][version] = "2.10"
 projects[image_resize_filter][subdir] = "contrib"
 projects[image_resize_filter][version] = "1.12"
 
-projects[imageapi][subdir] = "contrib"
-projects[imageapi][version] = "1.9"
+projects[imageapi][subdir] = contrib
+projects[imageapi][version] = 1.10
 
-projects[imagecache][subdir] = "contrib"
-projects[imagecache][version] = "2.0-beta10"
+projects[imagecache][subdir] = contrib
+projects[imagecache][version] = 2.0-beta12
 
 projects[imagecache_actions][subdir] = "contrib"
 projects[imagecache_actions][version] = "1.8"
 
-projects[imagefield][subdir] = "contrib"
-projects[imagefield][version] = "3.9"
+projects[imagefield][subdir] = contrib
+projects[imagefield][version] = 3.10
 
 projects[jquery_ui][subdir] = "contrib"
 projects[jquery_ui][version] = "1.4"
@@ -151,6 +162,9 @@ projects[menu_block][patch][] = "http://drupal.org/files/issues/menu-block-node-
 ; http://drupal.org/node/1209520
 projects[menu_block][patch][] = "http://drupal.org/files/issues/menu-block-parent-mlid.patch"
 
+projects[nanosoap][subdir] = contrib
+projects[nanosoap][version] = 1.x-dev
+
 projects[oembed][subdir] = "contrib"
 projects[oembed][version] = "0.8"
 
@@ -158,7 +172,10 @@ projects[office_hours][type] = "module"
 projects[office_hours][subdir] = "contrib"
 projects[office_hours][download][type] = "git"
 projects[office_hours][download][url] = "https://github.com/dingproject/drupal-office_hours.git"
-projects[office_hours][download][tag] = "DRUPAL-6--2-0-UNOFFICIAL7"
+projects[office_hours][download][tag] = "6.x-2.0-unofficial8"
+
+projects[openlayers][subdir] = contrib
+projects[openlayers][version] = 2.0-beta1
 
 projects[panels][subdir] = "contrib"
 projects[panels][version] = "3.9"
@@ -167,8 +184,8 @@ projects[panels][patch][] = "https://github.com/downloads/dingproject/ding-deplo
 projects[path_redirect][subdir] = "contrib"
 projects[path_redirect][version] = "1.0-rc2"
 
-projects[pathauto][subdir] = "contrib"
-projects[pathauto][version] = "2.0-alpha3"
+projects[pathauto][subdir] = contrib
+projects[pathauto][version] = 2.0-rc2
 
 projects[potx][subdir] = "contrib"
 projects[potx][version] = "3.3"
@@ -179,6 +196,9 @@ projects[purl][version] = "1.0-beta13"
 projects[rules][subdir] = "contrib"
 projects[rules][version] = "1.4"
 projects[rules][patch][] = "https://github.com/downloads/dingproject/ding-deploy/rules_dont_clear_cache_on_form_alter.patch"
+
+projects[securepages][subdir] = "contrib"
+projects[securepages][version] = "1.9"
 
 projects[similarterms][subdir] = "contrib"
 projects[similarterms][version] = "1.18"
@@ -198,8 +218,8 @@ projects[tagadelic][version] = "1.3"
 projects[term_node_count][subdir] = "contrib"
 projects[term_node_count][version] = "1.3"
 
-projects[token][subdir] = "contrib"
-projects[token][version] = "1.15"
+projects[token][subdir] = contrib
+projects[token][version] = 1.16
 
 projects[transliteration][subdir] = "contrib"
 projects[transliteration][version] = "3.0"
@@ -213,8 +233,8 @@ projects[views][version] = "2.12"
 projects[views_bulk_operations][subdir] = "contrib"
 projects[views_bulk_operations][version] = "1.10"
 
-projects[webform][subdir] = "contrib"
-projects[webform][version] = "3.9"
+projects[webform][subdir] = contrib
+projects[webform][version] = 3.11
 
 projects[wysiwyg][subdir] = "contrib"
 projects[wysiwyg][version] = "2.3"
@@ -231,7 +251,6 @@ projects[mothership][version] = "1.1"
 projects[dynamo][type] = "theme"
 projects[dynamo][download][type] = "git"
 projects[dynamo][download][url] = "https://github.com/kbib/dynamo.git"
-projects[dynamo][download][branch] = "v2.1.x"
 
 ; Ding modules
 
@@ -242,7 +261,7 @@ projects[alma][download][url] = "https://github.com/kbib/alma.git"
 projects[openruth][type] = "module"
 projects[openruth][download][type] = "git"
 projects[openruth][download][url] = "https://github.com/dingproject/openruth.git"
-projects[openruth][download][revision] = "v1.0.7"
+projects[openruth][download][revision] = "v1.0.9"
 
 projects[ding][type] = "module"
 projects[ding][download][type] = "git"
@@ -255,7 +274,6 @@ projects[ding_campaign][download][url] = "https://github.com/kbib/ding-campaign.
 projects[ting][type] = "module"
 projects[ting][download][type] = "git"
 projects[ting][download][url] = "https://github.com/kbib/ting.git"
-projects[ting][download][branch] = "v1.5.x"
 
 projects[trampoline][type] = "module"
 projects[trampoline][download][type] = "git"
@@ -335,7 +353,7 @@ projects[menu_block][version] = "2.3"
 ; Libraries
 libraries[ting-client][download][type] = "git"
 libraries[ting-client][download][url] = "https://github.com/dingproject/ting-client.git"
-libraries[ting-client][download][revision] = "v1.0.0"
+libraries[ting-client][download][revision] = "v1.1.0"
 libraries[ting-client][destination] = "modules/ting/lib"
 
 libraries[jquery_ui][download][type] = "get"

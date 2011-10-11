@@ -3,7 +3,7 @@
 Ding deploy script.
 
 It uses the Fabric deploying tool. Documentation for Fabric can be found here:
-http://docs.fabfile.org/0.9/
+http://docs.fabfile.org/
 """
 from __future__ import with_statement
 import logging
@@ -46,14 +46,16 @@ logging.basicConfig(filename=LOG_FILENAME,level=logging.WARNING, format="%(ascti
 
 def _env_settings(project=None):
     """ Set global environment settings base on CLI args. """
+
+    # Get the first role set, defaulting to dev.
     env.role = env.get('roles', ['dev'])[0]
-    if project == None:
-        t = env.role.split(':')
-        if len(t) == 2:
-            env.role = t[1]
-            project = t[0]
-    if project == None:
-        abort('no project in role and no project specified')
+
+    # If project was not set, extract it from the role.
+    if not project:
+        try:
+            env.role, project = env.role.split(':')
+        except ValueError:
+            abort('No project in role and no project specified.')
 
     env.project = project
     env.build_path = os.path.join('/home', env.user, 'build')
@@ -90,7 +92,10 @@ def sync_from_prod(project=None):
     run('mysqldump drupal6_ding_%s_prod | mysql drupal6_ding_%s_stg' % (env.project, env.project))
     prodPath = env.webroot_pattern % {'project': project, 'role': 'prod'}
     stgPath = env.webroot_pattern % {'project': project, 'role': 'stg'}
-    run('sudo rsync -avmCF --delete ' + prodPath + '/files/ ' + stgPath + 'files/')
+    run('sudo rsync -avmCF --delete %(prod)s %(stg)s' % {
+        'prod': os.path.join(prodPath, 'files'),
+        'stg': os.path.join(stgPath, 'files')
+    })
 
 def deploy(project=None, commit=None):
     """ Deploy a specific version in the specified environment. """
@@ -106,10 +111,10 @@ def deploy(project=None, commit=None):
     )
 
     make_path = time.strftime('ding-%Y%m%d%H%M')[:-1]
-    cwd = os.path.join(env.build_path, env.project, 'build')
-    abs_make_path = os.path.join(cwd, make_path)
+    profile_path = os.path.join(env.build_path, env.project)
+    abs_make_path = os.path.join(profile_path, 'build', make_path)
 
-    with cd(cwd):
+    with cd(profile_path):
         # Update git checkout.
         run('git fetch')
         run('git checkout %s' % commit)
@@ -125,3 +130,4 @@ def deploy(project=None, commit=None):
         'user': _get_system_username(),
         'commit': commit[0:7],
     })
+
