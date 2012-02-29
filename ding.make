@@ -257,7 +257,7 @@ projects[dynamo][download][revision] = "d9fead78d5170d0bf8d64cd85f28b57f55b9b5d0
 
 projects[alma][type] = "module"
 projects[alma][download][type] = "git"
-projects[alma][download][url] = "https://github.com/vejlebib/alma.git"
+projects[alma][download][url] = "https://github.com/kbib/alma.git"
 
 projects[openruth][type] = "module"
 projects[openruth][download][type] = "git"
