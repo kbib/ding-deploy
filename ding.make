@@ -251,7 +251,7 @@ projects[mothership][version] = "1.1"
 projects[dynamo][type] = "theme"
 projects[dynamo][download][type] = "git"
 projects[dynamo][download][url] = "https://github.com/kbib/dynamo.git"
-projects[dynamo][download][revision] = "v2.3.0"
+projects[dynamo][download][revision] = "d9fead78d5170d0bf8d64cd85f28b57f55b9b5d0"
 
 ; Ding modules
 
