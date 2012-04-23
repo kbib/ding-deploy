@@ -312,6 +312,13 @@ projects[securepages][version] = "1.9"
 projects[addthis][subdir] = "contrib"
 projects[addthis][version] = "3.0-beta1"
 
+projects[flag][subdir] = "contrib"
+projects[flag][version] = "2.0-beta6"
+
+projects[ding_redia_feed][type] = "module"
+projects[ding_redia_feed][download][type] = "git"
+projects[ding_redia_feed][download][url] = "git://github.com/helsbib/ding_redia_feed.git"
+
 projects[ding_wiki][type] = "module"
 projects[ding_wiki][download][type] = "git"
 projects[ding_wiki][download][url] = "https://github.com/kbib/ding-wiki.git"

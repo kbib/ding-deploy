@@ -5,4 +5,8 @@
 /libraries
 /modules
 /themes
-
+/build-test
+dev-roll.sh
+prod-roll.sh
+stg-roll.sh
+swap-stg-prod.sh
