@@ -274,6 +274,11 @@ projects[ding_campaign][download][type] = "git"
 projects[ding_campaign][download][url] = "https://github.com/kbib/ding-campaign.git"
 projects[ding_campaign][download][revision] = "425de754d3ba9a3b717ee59d488ce42d9be2909e"
 
+projects[ding_place2book][type] = "module"
+projects[ding_place2book][download][type] = "git"
+projects[ding_place2book][download][url] = "https://github.com/vejlebib/ding_place2book.git"
+projects[ding_place2book][download][tag] = "v1.0.3"
+
 projects[ting][type] = "module"
 projects[ting][download][type] = "git"
 projects[ting][download][url] = "https://github.com/dingproject/ting.git"
