@@ -70,8 +70,7 @@ projects[dibs][subdir] = "contrib"
 projects[dibs][type] = "module"
 projects[dibs][download][type] = "git"
 projects[dibs][download][url] = http://git.drupal.org/project/dibs.git
-projects[dibs][download][revision] = 6.x-1.x
-projects[dibs][patch][] = "http://drupal.org/files/php-5.3-reference-1392678-2.patch"
+projects[dibs][download][revision] = 1898dd0f1c729f0ac5982a6b2f1248d87082035b
 
 projects[diff][subdir] = "contrib"
 projects[diff][version] = "2.1"
