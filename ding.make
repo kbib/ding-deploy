@@ -283,6 +283,7 @@ projects[ting][type] = "module"
 projects[ting][download][type] = "git"
 projects[ting][download][url] = "https://github.com/dingproject/ting.git"
 projects[ting][download][revision] = "v1.7.0"
+projects[ting][patch][] = "https://github.com/dingproject/ting/pull/40.patch"
 
 projects[trampoline][type] = "module"
 projects[trampoline][download][type] = "git"
