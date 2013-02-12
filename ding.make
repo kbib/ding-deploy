@@ -307,6 +307,9 @@ projects[kolding_modules][download][url] = "https://github.com/kbib/kolding-modu
 projects[backup_migrate][subdir] = "contrib"
 projects[backup_migrate][version] = "2.2"
 
+projects[eu-cookie-compliance][subdir] = "contrib"
+projects[eu-cookie-compliance][version] = "1.7"
+
 ;projects[memcache][subdir] = "contrib"
 ;projects[memcache][version] = "1.5"
 
