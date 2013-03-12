@@ -292,8 +292,7 @@ projects[ding_place2book][download][tag] = "v1.0.3"
 
 projects[ding_mobile][type] = "module"
 projects[ding_mobile][download][type] = "git"
-projects[ding_mobile][download][url] = "https://github.com/dingproject/ding-mobile.git"
-projects[ding_mobile][download][revision] = "v1.1.0"
+projects[ding_mobile][download][url] = "https://github.com/kbib/ding-mobile.git"
 
 projects[ding_redia_feed][type] = "module"
 projects[ding_redia_feed][download][type] = "git"
@@ -374,10 +373,6 @@ projects[alternator][download][url] = "https://github.com/kbib/alternator.git"
 projects[kolding_mobile][type] = "theme"
 projects[kolding_mobile][download][type] = "git"
 projects[kolding_mobile][download][url] = "https://github.com/kbib/kolding-mobile.git"
-
-projects[ding_mobile][type] = "module"
-projects[ding_mobile][download][type] = "git"
-projects[ding_mobile][download][url] = "https://github.com/kbib/ding-mobile.git"
 
 ; Mobile tools and dependencies
 
