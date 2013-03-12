@@ -292,8 +292,7 @@ projects[ding_mobile][download][revision] = "v1.1.0"
 
 projects[ding_redia_feed][type] = "module"
 projects[ding_redia_feed][download][type] = "git"
-projects[ding_redia_feed][download][url] = "https://github.com/dingproject/ding_redia_feed.git"
-projects[ding_redia_feed][download][revision] = "v1.1.0"
+projects[ding_redia_feed][download][url] = "git://github.com/helsbib/ding_redia_feed.git"
 
 projects[ding_tema_sites][type] = module
 projects[ding_tema_sites][download][type] = git
@@ -342,10 +341,6 @@ projects[addthis][version] = "3.0-beta1"
 
 projects[flag][subdir] = "contrib"
 projects[flag][version] = "2.0-beta6"
-
-projects[ding_redia_feed][type] = "module"
-projects[ding_redia_feed][download][type] = "git"
-projects[ding_redia_feed][download][url] = "git://github.com/helsbib/ding_redia_feed.git"
 
 projects[ding_wiki][type] = "module"
 projects[ding_wiki][download][type] = "git"
