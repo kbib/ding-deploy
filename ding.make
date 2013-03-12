@@ -285,6 +285,11 @@ projects[ding_campaign][download][type] = "git"
 projects[ding_campaign][download][url] = "https://github.com/dingproject/ding-campaign.git"
 projects[ding_campaign][download][revision] = "v1.5.0"
 
+projects[ding_place2book][type] = "module"
+projects[ding_place2book][download][type] = "git"
+projects[ding_place2book][download][url] = "https://github.com/vejlebib/ding_place2book.git"
+projects[ding_place2book][download][tag] = "v1.0.3"
+
 projects[ding_mobile][type] = "module"
 projects[ding_mobile][download][type] = "git"
 projects[ding_mobile][download][url] = "https://github.com/dingproject/ding-mobile.git"
