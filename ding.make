@@ -296,7 +296,7 @@ projects[ding_mobile][download][url] = "https://github.com/kbib/ding-mobile.git"
 
 projects[ding_redia_feed][type] = "module"
 projects[ding_redia_feed][download][type] = "git"
-projects[ding_redia_feed][download][url] = "git://github.com/helsbib/ding_redia_feed.git"
+projects[ding_redia_feed][download][url] = "https://github.com/helsbib/ding_redia_feed.git"
 
 projects[ding_tema_sites][type] = module
 projects[ding_tema_sites][download][type] = git
