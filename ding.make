@@ -282,8 +282,8 @@ projects[ding][download][revision] = "5bb2d2cef33a36a81296d84c417a209810a9a437"
 
 projects[ding_campaign][type] = "module"
 projects[ding_campaign][download][type] = "git"
-projects[ding_campaign][download][url] = "https://github.com/dingproject/ding-campaign.git"
-projects[ding_campaign][download][revision] = "v1.5.0"
+projects[ding_campaign][download][url] = "https://github.com/kbib/ding-campaign.git"
+projects[ding_campaign][download][revision] = "c58b99e8c0b099cfd1070ebb4f6e83eb3d63b00a"
 
 projects[ding_place2book][type] = "module"
 projects[ding_place2book][download][type] = "git"
